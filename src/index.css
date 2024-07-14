@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: teal;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 1px, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 1px, 0);
+    opacity: 1;
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.4s both;
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 0.35s both;
+}
